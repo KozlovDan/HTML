@@ -1,0 +1,10 @@
+/* Пример дополнительных стилей, если необходимо */
+body {
+    padding-top: 56px; /* Чтобы избежать перекрытия контента навигацией */
+}
+.carousel-inner img {
+    width: 100%; 
+    height: 1000px; 
+    object-fit: cover; 
+	margin-top: 20px
+}
