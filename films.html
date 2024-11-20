@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Список фильмов</title>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Гай Ричи</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,11 +27,216 @@
     </div>
 </nav>
 
-<div class="container mt-4">
-    <div class="alert alert-warning" role="alert">
-        Эта страница сейчас находится в разработке!
+<div class="container">
+    <!-- Информация об актёре -->
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Гай Ричи</h2>
+            <p><strong>Дата рождения:</strong> 10 сентября 1968 года</p>
+            <p><strong>Полный возраст:</strong> 56 лет</p>
+            <p><strong>Фильмы:</strong> 15</p>
+            <p><strong>Жанры:</strong> Криминал, Комедия, Боевик</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="IMG/Guy Ritchie.jpg" alt="Фотография режиссера" class="rounded img-fluid actor-photo">
+        </div>
     </div>
+
+    <h2 class="mt-5">Лучшие фильмы</h2>
+    <div class="row">
+        <!-- Каждая карточка фильма -->
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster1.webp" class="card-img-top" alt="Фильм 1">
+                <div class="card-body">
+                    <h5 class="card-title">Большой куш</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster3.jpg" class="card-img-top" alt="Фильм 2">
+                <div class="card-body">
+                    <h5 class="card-title">Джентльмены</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster2.jpeg" class="card-img-top" alt="Фильм 3">
+                <div class="card-body">
+                    <h5 class="card-title">Карты, деньги, два ствола</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster4.webp" class="card-img-top" alt="Фильм 4">
+                <div class="card-body">
+                    <h5 class="card-title">Агенты А.Н.К.Л.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster5.webp" class="card-img-top" alt="Фильм 5">
+                <div class="card-body">
+                    <h5 class="card-title">Шерлок Холмс</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster6.webp" class="card-img-top" alt="Фильм 6">
+                <div class="card-body">
+                    <h5 class="card-title">Рок-н-рольщик</h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster7.webp" class="card-img-top" alt="Фильм 7">
+                <div class="card-body">
+                    <h5 class="card-title">Министерство неджентльменских дел</h5>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-3 mt-4">
+            <div class="card">
+                <img src="IMG/poster8.jpg" class="card-img-top" alt="Фильм 8">
+                <div class="card-body">
+                    <h5 class="card-title">Переводчик</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Дополнительная информация об актёре -->
+    <h2 class="mt-5">Дополнительная информация о режиссере</h2>
+    <div class="row">
+
+        <div class="col-md-4">
+            <p><strong>Эмми:</strong> Лучшая режиссура эпизода комедийного сериала "Джентльмены"</p>
+        </div>
+        <div class="col-md-4">
+            <p><strong>Любимое блюдо:</strong> Стейк с кровью</p>
+        </div>
+        <div class="col-md-4">
+            <p><strong>Интересный факт:</strong> Увлекается живописью.</p>
+        </div>
+    </div>
+
+    <!-- Фильмография -->
+    <h2 class="mt-5">Фильмография</h2>
+    <table class="table table-bordered mt-3 text-center">
+        <thead>
+            <tr>
+                <th>Год</th>
+                <th>Русское название</th>
+                <th>Оригинальное название</th>
+                <th>Сборы по всему миру</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1998</td>
+                <td>Карты, деньги, два ствола</td>
+                <td>Lock, Stock and Two Smoking Barrels</td>
+                <td>$3 753 929 </td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>Большой куш</td>
+                <td>Snatch</td>
+                <td>$83 557 872</td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>Унесенные</td>
+                <td>Swept Away</td>
+                <td>$1 036 520</td>
+            </tr>
+            <tr>
+                <td>2005</td>
+                <td>Револьвер</td>
+                <td>Revolver</td>
+                <td>$6 161 383</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>Рок-н-рольщик</td>
+                <td>RocknRolla</td>
+                <td>$25 739 994</td>
+            </tr>
+			 <tr>
+                <td>2009</td>
+                <td>Шерлок Холмс</td>
+                <td>Sherlock Holmes</td>
+                <td>$524 028 679</td>
+            </tr>
+			 <tr>
+                <td>2011</td>
+                <td>Шерлок Холмс: Игра теней</td>
+                <td>Sherlock Holmes: A Game of Shadows</td>
+                <td>$543 848 418</td>
+            </tr>
+			 <tr>
+                <td>2015</td>
+                <td>Агенты А.Н.К.Л.</td>
+                <td>The Man from U.N.C.L.E.</td>
+                <td>$110 045 109</td>
+            </tr>
+			<tr>
+                <td>2017</td>
+                <td>Меч короля Артура</td>
+                <td>King Arthur: Legend of the Sword</td>
+                <td>$149 175 066</td>
+            </tr>
+			<tr>
+                <td>2019</td>
+                <td>Аладдин</td>
+                <td>Aladdin</td>
+                <td>$1 050 693 953</td>
+            </tr>
+			<tr>
+                <td>2019</td>
+                <td>Джентльмены</td>
+                <td>The Gentlemen</td>
+                <td>$115 171 795</td>
+            </tr>
+			<tr>
+                <td>2021</td>
+                <td>Гнев человеческий</td>
+                <td>Wrath of Man</td>
+                <td>$103 966 489</td>
+            </tr>
+			<tr>
+                <td>2022</td>
+                <td>Переводчик</td>
+                <td>The Covenant</td>
+                <td>$21 948 551</td>
+            </tr>
+			<tr>
+                <td>2022</td>
+                <td>Операция «Фортуна»: Искусство побеждать</td>
+                <td>Operation Fortune: Ruse de Guerre</td>
+                <td>$48 983 306</td>
+            </tr>
+			<tr>
+                <td>2024</td>
+                <td>Министерство неджентльменских дел</td>
+                <td>The Ministry of Ungentlemanly Warfare</td>
+				<td>$26 974 933</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-O4n8gG8eI5U8b0JRCyOpZLrTUPzFUfKb9BlRVqWe2Y+T2U4cFmThnm7/D6zGeC7X" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-uDjyIpSlm55iG0Fs4iFz1F4hjE5UoGa1MeI7bxUIy7JA9N/2/6PtDai0tORmjNqd" crossorigin="anonymous"></script>
